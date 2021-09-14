@@ -2,7 +2,7 @@ import Card from "./Card";
 import topics from "../topics.json";
 import "../styles.css";
 
-function CategoriesGrid() {
+export default function CategoriesGrid(): JSX.Element {
   return (
     <div className="grid-container">
       {topics.map((topic) => (
@@ -11,5 +11,3 @@ function CategoriesGrid() {
     </div>
   );
 }
-
-export default CategoriesGrid;

@@ -5,6 +5,10 @@ html {
     --yellow-color: #f0e100;
     background-color: var(--bg-color);
   }
+
+  * {
+    box-sizing: border-box;
+  }
   
   .App {
     font-family: sans-serif;
@@ -23,6 +27,7 @@ html {
   
   .team {
     color: var(--yellow-color);
+    background-color: rgb(11, 12, 58);
     display: flex;
     width: 50%;
     max-width: 400px;

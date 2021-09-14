@@ -4,9 +4,8 @@ type TeamProps = {
     name: string
 }
 
-export default function useTeam(props: TeamProps): [string, number, () => void, () => void, () => void ] {
+export default function useTeam({ name }: TeamProps): [string, number, () => void, () => void, () => void] {
   const [score, setScore] = useState(0);
-  const name = props.name;
   
   function addFive(): void {
       setScore(prev => prev + 5);
