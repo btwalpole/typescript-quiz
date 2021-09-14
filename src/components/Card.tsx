@@ -6,7 +6,7 @@ type Props = {
     topic: string;
   }; /* use `interface` if exporting so that consumers can extend */
 
-function Card({ topic }: Props) {
+export default function Card({ topic }: Props): JSX.Element {
   const [isCompleted, setIsCompleted] = useState(false);
 
   const styles={
@@ -25,4 +25,3 @@ function Card({ topic }: Props) {
   );
 }
 
-export default Card;
