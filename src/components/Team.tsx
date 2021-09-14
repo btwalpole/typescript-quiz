@@ -2,17 +2,16 @@ import { useState } from "react";
 import "../styles.css";
 
 // Declaring type of props - see "Typing Component Props" for more examples
-type Props = {
+type TeamProps = {
     teamName: string;
     score: number;
     addFive: () => void;
-    addTen: () => void;
-    resetScore: () => void;
+    addTen?: () => void;
+    resetScore?: () => void;
   }; /* use `interface` if exporting so that consumers can extend */
 
 
-function Team({ teamName, score, addFive, addTen, resetScore }: Props) {
-
+function Team({ teamName, score, addFive, addTen, resetScore }: TeamProps) {
   return (
     <div className="team">
       <h2>{teamName}</h2>
@@ -22,6 +21,7 @@ function Team({ teamName, score, addFive, addTen, resetScore }: Props) {
         <button onClick={addFive}>+5</button>
         <button onClick={resetScore}>Reset</button>
       </div>
+      
     </div>
   );
 }

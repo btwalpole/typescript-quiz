@@ -5,7 +5,7 @@ import "../styles.css";
 function CategoriesGrid() {
   return (
     <div className="grid-container">
-      {topics.map((topic, index) => (
+      {topics.map((topic) => (
         <Card key={topic} topic={topic} />
       ))}
     </div>

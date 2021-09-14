@@ -3,10 +3,9 @@ import  useTeam  from "./hooks/useTeam"
 import CategoriesGrid from "./components/CategoriesGrid";
 import "./styles.css";
 
-export default function App() {
+function App(){
   const [teamAName, teamAScore, teamAAddFive, teamAAddTen, teamAResetScore ] = useTeam({name: 'Cool Team'});
   const [teamBName, teamBScore, teamBAddFive, teamBAddTen, teamBResetScore ] = useTeam({name: 'Cooler Team'});
-
 
   return (
     <div className="App">
@@ -19,3 +18,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
