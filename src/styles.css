@@ -1,8 +1,10 @@
 html {
-    --bg-color: #0c1b33;
-    --text-color: #7e7f9a;
-    --orange-color: #bc3908;
-    --yellow-color: #f0e100;
+    --bg-color: #03071E;
+    --text-color: #03071E;
+    --orange-color: #DC2F02;
+    --light-orange-color: #F48C06;
+    --yellow-color: #FFBA08;
+    --brown-color: #370617;
     background-color: var(--bg-color);
   }
 
@@ -16,8 +18,9 @@ html {
   }
   
   .heading {
-    color: lightblue;
+    color: var(--orange-color);
     padding-top: 1em;
+    font-size: 4em;
   }
   
   .teams-container {
@@ -27,7 +30,7 @@ html {
   
   .team {
     color: var(--yellow-color);
-    background-color: rgb(11, 12, 58);
+    background-color: var(--brown-color);
     display: flex;
     width: 50%;
     max-width: 400px;
@@ -76,6 +79,7 @@ html {
   }
   
   .item {
+    color: var(--text-color);
     border-radius: 5px;
     padding: 5px;
     display: flex;
@@ -83,10 +87,10 @@ html {
     align-items: center;
     font-size: 1.3em;
     cursor: pointer;
-    background-color: lightblue;
+    background-color: var(--light-orange-color);
   }
   
   .item:hover {
-    background-color: #fcb1a6;
+    background-color: var(--yellow-color);
   }
   

@@ -24,7 +24,7 @@ export default function App(): JSX.Element{
 
   return (
     <div className="App">
-      <h1 className="heading">EPIC QUIZ</h1>
+      <h1 className="heading">GEM & BENJI&apos;S EPIC HILLMOTTS QUIZ</h1>
       <div className="teams-container">
         <Team styles={stylesA} teamName={teamAName} score={teamAScore} addFive={teamAAddFive} addTen={teamAAddTen} resetScore={teamAResetScore}/>
         <Team styles={stylesB} teamName={teamBName} score={teamBScore} addFive={teamBAddFive} addTen={teamBAddTen} resetScore={teamBResetScore}/>
