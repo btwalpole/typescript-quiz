@@ -4,7 +4,7 @@ html {
     --orange-color: #DC2F02;
     --light-orange-color: #F48C06;
     --yellow-color: #FFBA08;
-    --brown-color: #370617;
+    --team-color: #2f3453;
     background-color: var(--bg-color);
   }
 
@@ -30,13 +30,12 @@ html {
   
   .team {
     color: var(--yellow-color);
-    background-color: var(--brown-color);
+    background-color: var(--team-color);
     display: flex;
     width: 50%;
     max-width: 400px;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid var(--yellow-color);
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
@@ -58,6 +57,8 @@ html {
     justify-content: center;
     cursor: pointer;
     font-size: 1em;
+    border: 2px solid var(--orange-color);
+    background: var(--yellow-color);
   }
   
   .grid-container {
