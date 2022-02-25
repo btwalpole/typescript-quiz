@@ -5,8 +5,8 @@ import "./styles.css";
 import React from "react";
 
 export default function App(): JSX.Element{
-  const [teamAName, teamAScore, teamAAddFive, teamAAddTen, teamAResetScore ] = useTeam({name: 'Coolest Team'});
-  const [teamBName, teamBScore, teamBAddFive, teamBAddTen, teamBResetScore ] = useTeam({name: 'Cooler Team'});
+  const [teamAName, teamAScore, teamAAddFive, teamAAddTen, teamAResetScore ] = useTeam({name: 'Team Name 1'});
+  const [teamBName, teamBScore, teamBAddFive, teamBAddTen, teamBResetScore ] = useTeam({name: 'Team Name 2'});
 
   let stylesA = {};
   let stylesB = {};
@@ -24,7 +24,7 @@ export default function App(): JSX.Element{
 
   return (
     <div className="App">
-      <h1 className="heading">GEM & BENJI&apos;S EPIC HILLMOTTS QUIZ</h1>
+      <h1 className="heading">GEM & BENJI&apos;S EPIC QUIZ</h1>
       <div className="teams-container">
         <Team styles={stylesA} teamName={teamAName} score={teamAScore} addFive={teamAAddFive} addTen={teamAAddTen} resetScore={teamAResetScore}/>
         <Team styles={stylesB} teamName={teamBName} score={teamBScore} addFive={teamBAddFive} addTen={teamBAddTen} resetScore={teamBResetScore}/>
