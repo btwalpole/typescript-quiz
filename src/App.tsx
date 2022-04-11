@@ -5,8 +5,8 @@ import "./styles.css";
 import React from "react";
 
 export default function App(): JSX.Element{
-  const [teamAName, teamAScore, teamAAddFive, teamAAddTen, teamAResetScore ] = useTeam({name: 'Team Name 1'});
-  const [teamBName, teamBScore, teamBAddFive, teamBAddTen, teamBResetScore ] = useTeam({name: 'Team Name 2'});
+  const [teamAName, teamAScore, teamAAddFive, teamAAddTen, teamAResetScore ] = useTeam({name: 'Team 1'});
+  const [teamBName, teamBScore, teamBAddFive, teamBAddTen, teamBResetScore ] = useTeam({name: 'Team 2'});
 
   let stylesA = {};
   let stylesB = {};
